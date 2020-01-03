@@ -6,7 +6,28 @@
 <body>
     <%- include('partials/nav'); %>
 
-    
+    <!-- vard -->
+    <div class="row section">
+        <div class="col s8 offset-s2">
+            <div class="card-panel teal">
+                <span class="white-text">
+                    <h3>
+                        Thank You
+                    </h3>
+
+                    <h5>
+                        We will get back to you soon!
+                    </h5>
+                </span>
+            </div>
+        </div>
+
+        <form action="/home/" method="GET" class="col s10">
+            <!-- Button -->
+            <button class="btn waves-effect waves-light right" type="submit" name="action"> Return</button>
+        </form>
+
+    </div>
 
     <%- include('partials/foot.ejs'); %>
 </body>

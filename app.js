@@ -19,13 +19,13 @@ if (PORT == null || PORT == "") {
     PORT = 8000;
 }
 
-app.get('/home', (req, res) => {
+app.get('/home/', (req, res) => {
     res.render('home');
 });
 
 app.post('/home/request', con.postClient);
 
-app.get('/home/thank-you', (req, res) => {
+app.get('/home/thank-you/', (req, res) => {
     res.render('thank-you');
 });
 
