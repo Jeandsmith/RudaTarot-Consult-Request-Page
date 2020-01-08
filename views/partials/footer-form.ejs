@@ -1,0 +1,80 @@
+<div class="container section">
+    <form action="/home/request" method="post" class="row form">
+
+        <div class="row">
+            <div class="col s12 m6">
+                <!-- First Name -->
+                <div class="input-field">
+                    <i class="material-icons prefix ">account_circle</i>
+                    <input type="text" id="first_name" class="validate" required name="firstName" data-length="20">
+                    <label for="first_name">Primer Nombre</label>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <!-- Last Name -->
+                <div class="input-field">
+                    <input type="text" data-length="20" id="last_name" class="validate" required name="lastName">
+                    <label for="last_name">Ultimo Nombre</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Numero Tele -->
+        <div class="row">
+            <div class="col s12 m6">
+                <!-- Contatc -->
+                <div class="input-field">
+                    <i class="material-icons prefix ">phone</i>
+                    <input type="tel" id="tel" class="validate" required pattern="[0-9]{10}" name="phone">
+                    <label for="tel">Numero Telefonico</label>
+                </div>
+            </div>
+
+            <div class="col s12 m6">
+                <div class="input-field">
+                    <i class="material-icons prefix ">email</i>
+                    <input type="email" id="mail" class="validate" data-length="30" required name="email">
+                    <label for="mail">Email</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Occupacion -->
+        <div class="row">
+            <div class="col s12 m6">
+                <!-- Ocupacion -->
+                <div class="input-field">
+                    <i class="material-icons prefix ">business</i>
+                    <input type="text" data-length="20" id="ocupation" class="validate" required name="ocupation">
+                    <label for="ocupation">Ocupacion</label>
+                </div>
+            </div>
+
+            <!-- Salary -->
+            <div class="col s12 m6">
+                <div class="input-field">
+                    <i class="material-icons prefix ">monetization_on</i>
+                    <input type="number" id="salary" required name="salary">
+                    <label for="salary">Salario Anual</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Text area -->
+        <div class="row">
+            <div class="col s12 m12 input-field">
+                <i class="material-icons prefix ">mode_edit</i>
+                <textarea id="icon_prefix2" class="materialize-textarea" data-length="120"
+                    name="problemState"></textarea>
+                <label for="icon_prefix2">Tu problema</label>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <button class="btn waves-effect waves-light right" type="submit" name="button">Submit
+            <i class="material-icons right">send</i>
+        </button>
+
+    </form>
+</div>
