@@ -21,7 +21,6 @@ if (PORT == null || PORT == "") {
 }
 
 app.get('/home/', (req, res) => {
-    // console.log(res.app.get('added'));
     res.render('home');
 });
 

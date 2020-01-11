@@ -2,10 +2,11 @@ let con = require('mysql');
 
 // Create instance of connection
 let conIns = con.createConnection({
-    host: "localhost",
-    user: 'root',
-    password: 'root',
-    database: "clients",
+    host: "i5x1cqhq5xbqtv00.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+    user: 'qslrubrm9rb275oj',
+    password: 'fjah874rvem005xi ',
+    database: "e9uxkobgvxvm3emt",
+    port: 3306
     supportBigNumbers: true
 });
 
