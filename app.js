@@ -15,7 +15,7 @@ app.set('added', true);
 
 // app.use(express.static(path.join(__dirname, "views")));
 
-// Resolves problem when the heroku server is not running
+// Resolves problem when the heroku server is not running   
 if (PORT == null || PORT == "") {
     PORT = 8000;
 }
