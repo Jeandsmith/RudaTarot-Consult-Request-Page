@@ -13,7 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.set('added', true);
 
-// app.use(express.static(path.join(__dirname, "views")));
+app.use(express.static(path.join(__dirname, "views")));
+app.use(express.static(path.join(__dirname, "images")));
 
 // Resolves problem when the heroku server is not running   
 if (PORT == null || PORT == "") {
